@@ -1,6 +1,6 @@
 # Proposal Builder App
 
-![App Screenshot](screenshot.png) *<!-- Add actual screenshot path -->*
+<!-- Add actual screenshot path -->*
 
 A lightweight client proposal builder with real-time preview and local storage persistence.
 
