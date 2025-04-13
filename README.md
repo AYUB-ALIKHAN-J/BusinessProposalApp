@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+# Proposal Builder App
 
-## Project info
+![App Screenshot](screenshot.png) *<!-- Add actual screenshot path -->*
 
-**URL**: https://lovable.dev/projects/ddf30abb-b68e-440a-9bc0-147b9623bd75
+A lightweight client proposal builder with real-time preview and local storage persistence.
 
-## How can I edit this code?
+## Key Features
 
-There are several ways of editing your application.
+### Proposal Dashboard
+- **All Proposals View**: Clean table displaying saved proposals
+- **Quick Search**: Filter by client name or tags
+- **Status Indicators**: 
+  - 🟢 Created (draft)
+  - 🟠 Pending (sent to client)
+  - 🔴 Error (failed to save)
+- **Quick Actions**:
+  - 👁️ View/Edit proposal details
+  - 🗑️ Delete proposals
 
-**Use Lovable**
+### Proposal Creation
+- **Interactive Form**:
+  - Client name input
+  - Multi-select services
+  - Dynamic pricing table with auto-total calculation
+  - Date range selection
+  - Optional notes field
+- **Live Preview**:
+  - Real-time updates as you type
+  - Professional formatting
+  - Responsive layout
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ddf30abb-b68e-440a-9bc0-147b9623bd75) and start prompting.
+### Data Management
+- **Local Storage**: All proposals saved to browser storage
+- **Simple Organization**: Basic tagging system
 
-Changes made via Lovable will be committed automatically to this repo.
+## Usage Guide
 
-**Use your preferred IDE**
+### Creating Proposals
+1. Click "New Proposal"
+2. Fill in client details
+3. Select services from dropdown
+4. Adjust quantities/prices (totals calculate automatically)
+5. Set timeline dates
+6. View updates in real-time preview pane
+7. Click "Save" to store in local storage
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Managing Proposals
+- **Search**: Type in search bar to filter by client name
+- **View/Edit**: Click eye icon to open proposal
+- **Delete**: Click trash icon to remove permanently
+- **Status**: Colored dots indicate current state
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Exporting
+- Click "Download PDF" to generate client-ready version
 
-Follow these steps:
+## Technical Details
+- Built with React.js
+- LocalStorage for data persistence
+- Responsive split-panel layout
+- Form validation for required fields
+- Lightweight state management
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ddf30abb-b68e-440a-9bc0-147b9623bd75) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Future Improvements
+- PDF export functionality
+- Enhanced tagging system
+- More status types
+- UI theme customization
